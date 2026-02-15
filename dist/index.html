@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body id="page-body" class="opacity-0 translate-y-4 transform transition-all duration-1000 ease-out">
+    <div>
+        <h1 class="flex justify-center mt-10 md:text-4xl text-2xl font-bold">
+            Social Posting App
+        </h1>
+        <div
+            class="flex justify-center items-center mt-24 rounded-2xl h-fit md:w-[50%] w-[83%] ml-[9%] md:ml-[25%] bg-blue-300">
+            <form class="flex flex-col gap-[2.5em] justify-center items-center w-[80%] md:w-full">
+                <h1 class=" text-2xl mt-10 font-bold ">
+                    Sign Up
+                </h1>
+                <input type="email" id="email" placeholder="Enter Email"
+                    class="text-center text-[14px] md:text-[16px]  w-[90%] border-b md:w-[60%] md:p-2 rounded outline-none">
+                <input type="password" id="password" placeholder="Enter Password"
+                    class="text-center md:text-[16px] text-[14px] border-b w-[90%] md:w-[60%] md:p-2 rounded outline-none">
+                <input type="password" id="confirm" placeholder="Confirm password"
+                    class="text-center md:text-[16px] text-[14px] border-b w-[90%] md:w-[60%] md:p-2 rounded outline-none ">
+
+                <p class="text-center">Already have an account? <a class="font-bold" href="#">Login</a></p>
+                <button type="submit"
+                    class="mb-10 cursor-pointer bg-blue-500 hover:bg-blue-900 transition-all duration-300 md:p-2 md:w-[80%] w-full p-4 rounded-3xl text-white ">Signup</button>
+            </form>
+        </div>
+    </div>
+    <script src="signup.mjs"></script>
+</body>
+
+</html>
