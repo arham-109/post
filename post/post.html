@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+
+<body>
+    <header class="flex md:justify-around justify-between md:text-2xl bg-gray-500 p-4 font-bold items-center w-full">
+        <p class="uppercase text-white md:tracking-widest ">Posting App</p>
+        <button onclick="logout()"
+            class="bg-white text-slate-900 md:p-4 md:px-8 p-2 md:text-[18px] text-[14px] md:rounded-2xl rounded font-bold cursor-pointer active:scale-95 transition-all duration-200 hover:bg-gray-200">Logout</button>
+    </header>
+
+    <form class="flex flex-col mt-8 gap-8 md:m-8 m-4 ">
+        <input type="text" id="title" placeholder="Enter Your Post Title"
+            class="border p-4 rounded-2xl border-gray-700 border-l-4 border-l-gray-700 md:text[20px] focus:border-slate-950 outline-none">
+        <textarea name="text" id="desc" placeholder="Enter Your Post Description"
+            class="border p-4 resize-none h-50 rounded-2xl border-gray-700 border-l-4 border-l-gray-700 md:text-[20px] focus:border-slate-950 outline-none"></textarea>
+
+        <button
+            class="p-4 bg-gray-600 text-white font-bold rounded-2xl w-[50%] self-end  active:scale-95 transition-all duration-200 hover:bg-slate-800 lg:w-[30%]">Submit</button>
+    </form>
+
+    <div id="output"></div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="post.mjs"></script>
+</body>
+
+</html>
