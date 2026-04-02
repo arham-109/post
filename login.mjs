@@ -2,7 +2,7 @@ let current_user_string = localStorage.getItem("currentuser")
 let current_user = JSON.parse(current_user_string)
 
 if(current_user){
-    window.location.href = "/post/post.html"
+    window.location.href = "post.html"
 }
 
 window.onload = () => {
@@ -54,6 +54,6 @@ if (existing_user.password !== password) {
 
 localStorage.setItem("currentuser", JSON.stringify(existing_user))
 
-window.location.href = "/post/post.html"
+window.location.href = "post.html"
 
 })

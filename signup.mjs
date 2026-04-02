@@ -2,7 +2,7 @@ let current_user_string = localStorage.getItem("currentuser")
 let current_user = JSON.parse(current_user_string)
 
 if(current_user){
-    window.location.href = "/post/post.html"
+    window.location.href = "post.html"
 }
 
 
@@ -70,7 +70,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
 
     localStorage.setItem("users", JSON.stringify(updated_users))
 
-    window.location.href = "/login/login.html"
+    window.location.href = "login.html"
 
 
 

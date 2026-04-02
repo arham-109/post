@@ -2,14 +2,14 @@ let current_user_string = localStorage.getItem("currentuser")
 let current_user = JSON.parse(current_user_string)
 
 if (!current_user) {
-    window.location.href = "/login/login.html"
+    window.location.href = "login.html"
 }
 
 
 function logout() {
     localStorage.removeItem("currentuser")
 
-    window.location.href = "/login/login.html"
+    window.location.href = "login.html"
 }
 
 
